@@ -40,4 +40,31 @@ p {
 }
 
 ul {
-  padding
+  padding-left: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.contact a {
+  display: block;
+  margin-bottom: 5px;
+}
+
