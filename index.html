@@ -3,74 +3,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maisarah Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <aside id="sidebar">
-      <div class="profile">
-        <div class="logo">M</div>
+    <nav id="sidebar" class="active">
+      <div class="sidebar-header">
+        <h1>M</h1>
         <h2>Maisarah</h2>
         <p>Junior Programmer</p>
       </div>
-      <nav>
+      <ul class="menu">
+        <li onclick="showSection('about')">About</li>
+        <li onclick="showSection('education')">Education</li>
+        <li onclick="showSection('skills')">My Skills</li>
+        <li onclick="showSection('work')">Work</li>
+        <li onclick="showSection('projects')">Recent Project</li>
+        <li onclick="showSection('contact')">Contact</li>
+      </ul>
+      <button id="toggleBtn" onclick="toggleSidebar()">☰</button>
+    </nav>
+    <main id="main-content">
+      <section id="about" class="content-section active">
+        <h2>About</h2>
+        <p>Hai! Saya Maisarah — pernah bekerja di bidang administrasi, dan sekarang mulai fokus mengembangkan diri di dunia IT. Dulu terbiasa mengelola dokumen dan data, sekarang mulai belajar HTML, CSS, dan menikmati proses ngoding (meskipun kadang suka error dadakan)...</p>
+      </section>
+      <section id="education" class="content-section">
+        <h2>Education</h2>
         <ul>
-          <li onclick="showSection('about')">About</li>
-          <li onclick="showSection('education')">Education</li>
-          <li onclick="showSection('skills')">My Skills</li>
-          <li onclick="showSection('work')">Work</li>
-          <li onclick="showSection('projects')">Recent Project</li>
-          <li onclick="showSection('contact')">Contact</li>
+          <li><strong>SMK Negeri 22 Jakarta</strong> (2014/2015)<br>Akuntansi</li>
+          <li><strong>Universitas Indraprasta PGRI</strong> (2018/2019)<br>Teknik Informatika</li>
         </ul>
-      </nav>
-    </aside>
-    <main>
-      <button id="toggleSidebar">☰</button>
-      <section id="content">
-        <div id="about" class="section active">
-          <h1>About</h1>
-          <p>Hai! Saya Maisarah — pernah bekerja di bidang administrasi, dan sekarang mulai fokus mengembangkan diri di dunia IT... (dipotong agar ringkas)</p>
-        </div>
-        <div id="education" class="section">
-          <h1>Education</h1>
-          <h3>SMK Negeri 22 Jakarta</h3>
-          <p>Akuntansi, 2014/2015</p>
-          <p>Memahami tentang akuntansi dasar...</p>
-          <h3>Universitas Indraprasta PGRI (UNINDRA)</h3>
-          <p>Teknik Informatika, 2018/2019</p>
-          <p>Membuat Aplikasi Perancangan sistem Manajemen Kepegawaian...</p>
-        </div>
-        <div id="skills" class="section">
-          <h1>My Skills</h1>
-          <ul>
-            <li>Microsoft Office</li>
-            <li>Photoshop</li>
-            <li>Adobe Premiere</li>
-            <li>Java Netbeans</li>
-            <li>HTML dasar</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-        <div id="work" class="section">
-          <h1>Work Experience</h1>
-          <p>Project Kementrian Kelautan dan Perikanan (2016-2017) - Admin Project</p>
-          <p>PT. Swakarya Insan Mandiri (2017-2018) - Desk Collection Agent</p>
-          <p>Home Credit Indonesia (2019-2020) - Magang HR Intern</p>
-          <p>PT. Maxxima Innovative Engineering (2020-2024) - Data Operator & Admin Project</p>
-        </div>
-        <div id="projects" class="section">
-          <h1>Recent Projects</h1>
-          <img src="login.png" alt="Login Page"/>
-          <img src="register.png" alt="Register Page"/>
-        </div>
-        <div id="contact" class="section">
-          <h1>Contact</h1>
-          <p>Email: maisaraharfan@gmail.com</p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/maisarah-arfan-a8b83489" target="_blank">Maisarah Arfan</a></p>
-        </div>
+      </section>
+      <section id="skills" class="content-section">
+        <h2>My Skills</h2>
+        <ul>
+          <li>Microsoft Office</li>
+          <li>Photoshop</li>
+          <li>Adobe Premiere</li>
+          <li>Java Netbeans</li>
+          <li>HTML Dasar</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+      <section id="work" class="content-section">
+        <h2>Work</h2>
+        <ul>
+          <li>PT Maxxima - Data Operator (2020-2023)</li>
+          <li>PT Maxxima - Admin Project (2023-2024)</li>
+        </ul>
+      </section>
+      <section id="projects" class="content-section">
+        <h2>Recent Project</h2>
+        <img src="images/IMG_4976.jpeg" alt="Login" width="300">
+        <img src="images/IMG_4978.png" alt="Register" width="300">
+      </section>
+      <section id="contact" class="content-section">
+        <h2>Contact</h2>
+        <p>Email: maisaraharfan@gmail.com</p>
+        <p><a href="https://www.linkedin.com/in/maisarah-arfan-a8b83489">LinkedIn</a></p>
       </section>
     </main>
   </div>
