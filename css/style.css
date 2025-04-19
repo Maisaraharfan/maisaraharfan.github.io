@@ -6,66 +6,85 @@ body {
   color: #fff;
 }
 .container {
-  display: flex;
-  height: 100vh;
+    display: flex;
+    height: 100vh;
 }
+
 .sidebar {
-  width: 80px;
-  background-color: #1f1f1f;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-  position: fixed;
-  height: 100%;
+    width: 250px;
+    background-color: #1e1e1e;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.sidebar .logo {
-  font-size: 28px;
-  font-weight: bold;
-  color: #00ffff;
-  margin-bottom: 30px;
+
+.logo {
+    font-size: 48px;
+    font-weight: bold;
+    color: #00ffff;
+    margin-bottom: 10px;
 }
-.nav a {
-  color: #ccc;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
 }
-.nav a.active, .nav a:hover {
-  color: #00ffff;
+
+.role {
+    color: #888;
+    margin-bottom: 30px;
 }
-.content {
-  margin-left: 80px;
-  padding: 40px;
-  flex: 1;
+
+.sidebar nav a {
+    display: block;
+    margin: 10px 0;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
 }
-.intro h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
+
+.sidebar nav a:hover,
+.sidebar nav a:focus {
+    color: #00ffff;
 }
-.intro .highlight {
-  color: #00ffff;
+
+.main-content {
+    flex: 1;
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.subtitle {
-  font-size: 18px;
-  margin-bottom: 20px;
-  color: #ccc;
+
+.main-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-bottom: 20px;
-  background-color: transparent;
-  border: 1px solid #00ffff;
-  color: #00ffff;
-  text-decoration: none;
-  transition: 0.3s;
+
+.highlight {
+    color: #00ffff;
 }
-.btn:hover {
-  background-color: #00ffff;
-  color: #121212;
+
+.description {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #00ffff;
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  .contact-btn:hover {
+    background-color: #00ffff;
+    color: #111;
 }
 .desc {
   max-width: 600px;
