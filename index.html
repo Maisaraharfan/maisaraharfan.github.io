@@ -2,35 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maisarah | Web Developer</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maisarah Arfan | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="container">
     <aside class="sidebar" id="sidebar">
-      <div class="logo">M</div>
-      <h2>Maisarah</h2>
-      <p>Web Developer</p>
+      <div class="logo">
+        <div class="icon">M</div>
+        <h2>Maisarah</h2>
+        <p>Web Developer</p>
+      </div>
       <nav>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">My Skills</a>
-        <a href="#work">Work</a>
-        <a href="#projects">Recent Project</a>
-        <a href="#contact">Contact</a>
+        <ul>
+          <li onclick="showSection('about')">About</li>
+          <li onclick="showSection('education')">Education</li>
+          <li onclick="showSection('skills')">My Skills</li>
+          <li onclick="showSection('work')">Work</li>
+          <li onclick="showSection('projects')">Recent Project</li>
+          <li onclick="showSection('contact')">Contact</li>
+        </ul>
       </nav>
     </aside>
+
     <main class="content" onclick="hideSidebar()">
-      <section id="about">
-        <h1>Hi, I’m <span>Maisarah</span>, web developer</h1>
+      <section id="about" class="section">
+        <h1>Hi, <br> I’m <span class="highlight">Maisarah</span>,<br>web developer</h1>
         <p class="sub">Front End Developer / Laravel Enthusiast</p>
         <a href="#contact" class="btn">Contact me!</a>
-        <p class="desc">Pernah bekerja di bidang administrasi, dan sekarang mulai fokus mengembangkan diri di dunia IT... (konten lengkap nanti disisipkan)</p>
+        <hr />
+        <p class="desc">
+          Pernah bekerja di bidang administrasi, dan sekarang mulai fokus mengembangkan diri di dunia IT...
+        </p>
       </section>
-      <!-- Section lainnya akan ditambahkan setelah ini -->
+
+      <section id="education" class="section hidden">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>SMK Negeri 22 Jakarta</strong><br>Akuntansi (2014/2015)</li>
+          <li><strong>UNINDRA</strong><br>Teknik Informatika (2018/2019)</li>
+        </ul>
+      </section>
+
+      <section id="skills" class="section hidden">
+        <h2>My Skills</h2>
+        <ul>
+          <li>Microsoft Office</li>
+          <li>Photoshop</li>
+          <li>Adobe Premiere</li>
+          <li>Java Netbeans</li>
+          <li>HTML dasar</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+
+      <section id="work" class="section hidden">
+        <h2>Work Experience</h2>
+        <p>Semua pengalaman lengkap sesuai input kamu…</p>
+      </section>
+
+      <section id="projects" class="section hidden">
+        <h2>Recent Project</h2>
+        <img src="project-login.png" alt="Karang Taruna Login" class="project-img"/>
+        <img src="project-register.png" alt="Karang Taruna Registrasi" class="project-img"/>
+      </section>
+
+      <section id="contact" class="section hidden">
+        <h2>Contact</h2>
+        <p>Email: maisaraharfan@gmail.com</p>
+        <p>
+          LinkedIn: <a href="https://www.linkedin.com/in/maisarah-arfan-a8b83489" target="_blank">
+          Maisarah Arfan</a>
+        </p>
+      </section>
     </main>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
