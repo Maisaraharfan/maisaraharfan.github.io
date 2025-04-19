@@ -1,96 +1,53 @@
 
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212;
-    color: #fff;
-    display: flex;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
 }
 
 .sidebar {
-    width: 200px;
-    background-color: #1f1f1f;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    height: 100vh;
+  width: 220px;
+  background-color: #111;
+  height: 100vh;
+  position: fixed;
+  padding: 20px;
 }
 
-.sidebar .logo {
-    font-size: 3em;
-    font-weight: bold;
-    color: #00ffff;
+.sidebar h2 {
+  color: #0ff;
 }
 
-.sidebar .title {
-    font-size: 1.2em;
-    margin: 10px 0 0 0;
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.sidebar .subtitle {
-    font-size: 0.9em;
-    color: #aaa;
-}
-
-.sidebar nav ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 30px;
-    width: 100%;
-}
-
-.sidebar nav ul li {
-    margin: 15px 0;
-}
-
-.sidebar nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.9em;
-    transition: 0.3s;
-}
-
-.sidebar nav ul li a:hover {
-    color: #00ffff;
+.sidebar ul li a {
+  color: #ddd;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
 }
 
 .main-content {
-    margin-left: 200px;
-    padding: 60px;
-    flex-grow: 1;
+  margin-left: 240px;
+  padding: 30px;
 }
 
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 0;
+h1 span {
+  color: #0ff;
 }
 
-.hero h2 {
-    font-size: 2.5em;
-    margin: 0;
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.hero .highlight {
-    color: #00ffff;
-}
-
-.hero p {
-    margin: 20px 0;
-    color: #ccc;
-}
-
-.btn {
-    padding: 10px 20px;
-    background-color: transparent;
-    border: 1px solid #00ffff;
-    color: #00ffff;
-    text-decoration: none;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: #00ffff;
-    color: #121212;
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #0ff;
+  border-radius: 8px;
 }
