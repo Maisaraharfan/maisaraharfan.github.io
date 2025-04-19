@@ -1,0 +1,47 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+}
+.sidebar {
+    width: 200px;
+    background-color: #1e1e1e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow: auto;
+    transition: width 0.3s;
+}
+.sidebar button {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+}
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar nav ul li {
+    padding: 15px;
+    cursor: pointer;
+}
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+}
+.content-section {
+    display: none;
+}
+.content-section.active {
+    display: block;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}

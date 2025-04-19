@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maisarah Arfan - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="fonts/BotFont.ttf" rel="stylesheet" type="font/ttf">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <button onclick="toggleSidebar()">☰</button>
+        <nav>
+            <ul>
+                <li onclick="showContent('about')">About</li>
+                <li onclick="showContent('education')">Education</li>
+                <li onclick="showContent('skills')">My Skills</li>
+                <li onclick="showContent('work')">Work</li>
+                <li onclick="showContent('project')">Recent Project</li>
+                <li onclick="showContent('contact')">Contact</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content" id="main-content">
+        <section id="about" class="content-section active">
+            <h1>About Me</h1>
+            <p>Hai! Saya Maisarah — pernah bekerja di bidang administrasi, dan sekarang mulai fokus mengembangkan diri di dunia IT...</p>
+            <p><strong>Contact me!</strong><br>Pernah bekerja di bidang administrasi, dan sekarang mulai fokus mengembangkan diri di dunia IT...</p>
+        </section>
+        <section id="education" class="content-section">
+            <h1>Education</h1>
+            <ul>
+                <li><strong>SMK Negeri 22 Jakarta</strong><br>Akuntansi (2014/2015)</li>
+                <li><strong>UNINDRA</strong><br>Teknik Informatika (2018/2019)</li>
+            </ul>
+        </section>
+        <section id="skills" class="content-section">
+            <h1>My Skills</h1>
+            <ul>
+                <li>Microsoft Office</li><li>Photoshop</li><li>Adobe Premiere</li>
+                <li>Java Netbeans</li><li>HTML dasar</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+        </section>
+        <section id="work" class="content-section">
+            <h1>Work Experience</h1>
+            <p>Semua pengalaman lengkap sesuai input kamu...</p>
+        </section>
+        <section id="project" class="content-section">
+            <h1>Recent Project</h1>
+            <img src="assets/karangtaruna-login.jpeg" alt="Login Page">
+            <img src="assets/karangtaruna-registrasi.jpeg" alt="Registrasi Page">
+        </section>
+        <section id="contact" class="content-section">
+            <h1>Contact</h1>
+            <p>Email: maisaraharfan@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/maisarah-arfan-a8b83489">Maisarah Arfan</a></p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
