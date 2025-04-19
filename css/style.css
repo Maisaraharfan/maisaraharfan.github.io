@@ -1,122 +1,75 @@
 
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: white;
 }
-
 .container {
-    display: flex;
-    min-height: 100vh;
+  display: flex;
+  height: 100vh;
 }
-
 .sidebar {
-    width: 220px;
-    background-color: #1f1f1f;
-    padding: 20px 0;
-    transition: width 0.3s;
-    position: fixed;
-    height: 100vh;
-    overflow: auto;
+  width: 80px;
+  background-color: #1b1b1b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  position: fixed;
+  height: 100%;
 }
-
 .sidebar .logo {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    color: #fff;
-    margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px;
 }
-
-.sidebar nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.nav a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
 }
-
-.sidebar nav ul li {
-    margin: 20px 0;
+.nav a.active, .nav a:hover {
+  color: #0ff;
 }
-
-.sidebar nav ul li a {
-    color: #aaa;
-    text-decoration: none;
-    display: block;
-    padding: 10px 20px;
-    transition: background 0.3s, color 0.3s;
-}
-
-.sidebar nav ul li a.active,
-.sidebar nav ul li a:hover {
-    background-color: #333;
-    color: #fff;
-}
-
 .content {
-    margin-left: 220px;
-    padding: 40px;
-    flex-grow: 1;
-    transition: margin-left 0.3s;
+  margin-left: 80px;
+  padding: 40px;
+  flex: 1;
 }
-
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+.intro h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
 }
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.intro .highlight {
+  color: #0ff;
 }
-
-button.contact-btn {
-    padding: 10px 20px;
-    background-color: #03dac6;
-    border: none;
-    color: #000;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background 0.3s;
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ccc;
 }
-
-button.contact-btn:hover {
-    background-color: #018786;
-    color: #fff;
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid #0ff;
+  color: #0ff;
+  text-decoration: none;
+  transition: 0.3s;
 }
-
-.project-gallery {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+.btn:hover {
+  background-color: #0ff;
+  color: #000;
 }
-
-.project-gallery img {
-    max-width: 300px;
-    border: 2px solid #fff;
-    border-radius: 5px;
-}
-
-.skills-list, .contact-list {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-@media (max-width: 768px) {
-    .sidebar {
-        width: 60px;
-    }
-
-    .content {
-        margin-left: 60px;
-    }
-
-    .sidebar nav ul li a {
-        font-size: 0;
-    }
-
-    .sidebar .logo {
-        font-size: 20px;
-    }
+.desc {
+  max-width: 600px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #ddd;
 }
