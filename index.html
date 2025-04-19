@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maisarah Arfan - Web Developer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+    nav.sidebar {
+      width: 200px;
+      background-color: #1a1a1a;
+      padding: 20px;
+    }
+    nav.sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav.sidebar li {
+      margin: 20px 0;
+    }
+    nav.sidebar a {
+      color: #0ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      flex: 1;
+      padding: 40px;
+    }
+    h1, h2 {
+      color: #fff;
+    }
+    .section {
+      display: none;
+    }
+    .section.active {
+      display: block;
+    }
+    .btn {
+      background-color: transparent;
+      border: 2px solid #0ff;
+      color: #0ff;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #333;
+      margin: 30px 0;
+    }
+    img {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">My Skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Recent Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="about" class="section active">
+        <h1>Hi,<br>I'm <span style="color: cyan;">Maisarah</span>,<br>web developer</h1>
+        <p>Front End Developer / Laravel Enthusiast</p>
+        <button class="btn">Contact me!</button>
+        <hr>
+        <p>
+          Pernah bekerja di bidang administrasi, dan sekarang mulai fokus mengembangkan diri di dunia IT.
+          Dulu terbiasa mengelola dokumen dan data, sekarang mulai belajar HTML, CSS, dan menikmati proses ngoding (meskipun kadang suka error dadakan).
+          Saya orangnya penasaran, suka belajar, dan selalu berusaha tumbuh lewat tantangan.
+          Selain itu, saya juga aktif sebagai konten kreator affiliate di TikTok dan Shopee,
+          di mana saya membagikan konten seputar produk dengan cara yang simpel untuk audiens media sosial masa kini.
+          Bagi saya, setiap error adalah guru, dan setiap “nggak bisa” adalah peluang buat bilang “eh, sekarang bisa kok!”.
+        </p>
+      </section>
+
+      <section id="education" class="section">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>SMK Negeri 22 Jakarta</strong><br>Akuntansi (2014/2015)</li>
+          <li><strong>UNINDRA</strong><br>Teknik Informatika (2018/2019)</li>
+        </ul>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <ul>
+          <li>Microsoft Office</li>
+          <li>Photoshop</li>
+          <li>Adobe Premiere</li>
+          <li>Java Netbeans</li>
+          <li>HTML dasar</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+
+      <section id="work" class="section">
+        <h2>Work Experience</h2>
+        <ul>
+          <li><strong>Kementerian Kelautan dan Perikanan</strong><br><em>Admin Project (2016–2017)</em><br>Pendataan dan Pengelolaan Arsip SIPI, SIKPI, dan SIUP KKP.</li>
+          <li><strong>PT. Swakarya Insan Mandiri</strong><br><em>Desk Collection Agent (2017–2018)</em><br>Desk Collection Agent Akulaku.</li>
+          <li><strong>Home Credit Indonesia</strong><br><em>Magang HR Intern (2019–2020)</em><br>Entry data, dan Merapikan berkas karyawan.</li>
+          <li><strong>PT. Maxxima Innovative Engineering</strong><br><em>Data Operator (2020–2023)</em><br>Entry data, mapping, editing foto & video, membuat manual book.<br>
+          <em>Admin Project (2023–2024)</em><br>Menangani dokumen terkait project dan dokumen perusahaan.</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Recent Project</h2>
+        <img src="img/login-karangtaruna.png" alt="Login Aplikasi Karang Taruna">
+        <img src="img/registrasi-karangtaruna.png" alt="Registrasi Aplikasi Karang Taruna">
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: maisaraharfan@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/maisarah-arfan" target="_blank" style="color:cyan;">linkedin.com/in/maisarah-arfan</a></p>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const navLinks = document.querySelectorAll('nav a');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+
+        sections.forEach(section => {
+          section.classList.remove('active');
+        });
+
+        document.getElementById(targetId).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
